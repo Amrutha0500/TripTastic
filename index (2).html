@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website</title>
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&family=Roboto+Slab:wght@100;300;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+
+    <!-- Animate on scroll CDN -->
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Local CSS File(s) -->
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="links-container">
+                <li class="link-item"><a href="#travel">Travel</a></li>
+                <li class="link-item"><a href="#explore-section">Explore</a></li>
+                <li class="link-item"><a href="#hero-section"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl0N6mauF9_xYDRMlkZMI-Av9TH9bS1jkoSw&s" class="logo" alt=""></a></li>
+                <li class="link-item"><a href="#services">Services</a></li>
+                <li class="link-item"><a href="#booknow">Book Now</a></li>
+            </ul>
+        </nav>
+        <main class="hero-section" id="hero-section">
+            <div class="background">
+                <img src="https://images.unsplash.com/photo-1498855926480-d98e83099315?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bmF0dXJlJTIwbW91bnRhaW58ZW58MHx8MHx8fDA%3D" class="background-image" alt="hero-section image">
+            
+                <!-- grid -->
+                <div class="grid-slider">
+                    <div class="grid-item hide"></div>
+                    <div class="grid-item hide"></div>
+                    <div class="grid-item hide"></div>
+                    <div class="grid-item hide"></div>
+                    <div class="grid-item hide"></div>
+                    <div class="grid-item hide"></div>
+                </div>
+            
+            </div>
+
+            <div class="hero-section-content" data-aos.init()="fade-up">
+                <h1 class="hero-section-title">Experience the World!!!</h1>
+                <p class="hero-section-sub-heading">Bon Voyage with US!!</p>
+            </div>
+        
+            <!-- scroll down img -->
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAV1BMVEX///+AgIB9fX14eHjLy8uFhYXDw8N2dnZ6enq0tLS8vLz4+Pjy8vKNjY339/eHh4fs7Ozm5ubY2Nimpqatra2goKC2traSkpKampru7u7R0dHHx8epqangUo7tAAAEG0lEQVR4nO2bi1biMBRFaQCptiCijsyM//+dA8ZAW/tIch9JO2d/AJfde05S1tLVCgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwH3D8k2Jq9aA2qn7epVA8734pTTpsTbHWVzyXxfpRZVJ9ESyK9V+VYTeqi2Cho1g/XwUvw/RacaHal3aqfFCdoK5i9eGmltKKdeFGaSpW+8ZU2aDeN6ip2BQUDmpbUEuxLSga1MO2PUpH8d5B8aA2O6in2N2goGI3ojqKfYJCXewXlFbsFxTp4qEnovKKQ4ICQa1/HDIaisOC7IpDEZVVHBNk7uL4KCnFn9eE2NQpQRnF6ak7rqmHiWcpozgtyKY4FRYZRR9Brqleo7gV/R4ry1S/Z8mt6D+VHFSfDvIr+guSp/qGhVdRc2rAs+RTDNngFUJQD4GjeBRDBQmKIR28KT5RBetgwegHG/4sv4YR3xbH34BZFeMEqe/8Y79hxogIakxE6YqxghGKYQc2l2JcRL+nhilWhFHxXaQIBm/xvSTMitxifES/KE9h417VFZUFyVsMDiotosUuWFA7qETBdYSgblDVI6qtmEhQr4sJOsik6LnFZBu8ohHUpIJkRY+gJjlFm0h3MWEHmRQngpo4ohbJLmYhKBnUDCLKoji4ReIG6YfMHZmg0gSNYRRcrd7W/IrEiJoXTkGy4tvPTzwSO8gseFGkBfW1+3kvhhZRdkGqYtlRJAoWAoLkoLYUXwb/eMWLUkSQqtjcIk3QSAnydTHLiHIoui0eSYLs10RHkRbUzy9BWgfXooIcXczwmugo0oL6mXEHb4qkLdIqKNxBHkUS0h28KZKCGo9CB9MqqnTwppgiqHJvMnkoCr6qDSgqB1U1okkU9Q6ZhqJmUPl/0Xspqm1R8ZroKCptMUEHHY8qigkFV6unnYKg+Z1O8KIovkWzTSoor2i2x7SC0kFNHNFvRcEtmiIDwYui2L2YQUQtUlvMRlCqi8bUqcXuSGwx+TXRhr+LGUXUwr3FTE7RJryKGQryKmbWQQefYnYddHBdGlm8qvXDs8UsO+jguDSyjaiFvkVTZC1I72LGHXTQtpjpNdGGoph5Bx3xQc36FG3yELnFWUTUsom6NMz+kPqL+7OJ2KLZZ/SDd5pNcBfNdkYbvBK6xVlF1BLWxZlF1BKyxVkKhnTRPM8uohbfoM6wgw4/xZlG1OIT1NlG1DJ93Mw4opapoM46opbxLS5AcLyLs3tV62d4i7PvoGOoi4uIqKU/qDO/Jtr0KS5KsC+oi+mgo3vcLKiDjnZQFxZRS3OLi4uoZXP7Z5LyY3ERtZxKJ1il/ipSnHZWMPX3EOS6xfKc+luIcirL82Ijajktt4MAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAH/wBPpkEJ4ioJ+QAAAABJRU5ErkJggg=="class="scroll-down-icon">
+            <section id="next-section"></section>
+        </main>
+    </header>
+    <section class="explore-section" id="explore-section">
+        <h1 class="section-title" data-aos.init()="fade-up">Explore the world</h1>
+        <p class="section-para" data-aos.init()="fade-up">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rutrum
+            sem augue, vitae bibendum nibh tempor nec. Aenean quis commodo lectus, in rhoncus lorem</p>
+    
+        <!-- grid -->
+    
+        <div class="tours-container">
+            <div class="tour-card" data-aos.init()="fade-up">
+                <img src="https://c4.wallpaperflare.com/wallpaper/730/745/290/sunset-sydney-australia-opera-house-desktop-backgrounds-free-download-for-windows-wallpaper-preview.jpg" class="tour-img" alt="tour-image">
+                <div class="tour-body">
+                    <h3 class="tour-name">Australia</h3>
+                    <p class="tour-action">View city</p>
+                </div>
+            </div>
+    
+            <div class="tour-card" data-aos.init()="fade-up">
+                <img src="https://www.baltana.com/files/wallpapers-25/Sunset-Maldives-Wallpaper-1920x1080-67798.jpg" class="tour-img" alt="tour-image">
+                <div class="tour-body">
+                    <h3 class="tour-name">Maldives</h3>
+                    <p class="tour-action">View city</p>
+                </div>
+            </div>
+    
+            <div class="tour-card" data-aos.init()="fade-up">
+                <img src="https://freedesignfile.com/upload/2016/12/Eiffel-Tower-in-Paris-HD-picture-01.jpg" class="tour-img" alt="tour-image">
+                <div class="tour-body">
+                    <h3 class="tour-name">Paris</h3>
+                    <p class="tour-action">View city</p>
+                </div>
+            </div>
+    
+            <div class="tour-card" data-aos.init()="fade-up">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM_DD-0DBcttzfLkvdCI3CmxGD8-jbEnywzA&s" class="tour-img" alt="tour-image">
+                <div class="tour-body">
+                    <h3 class="tour-name">Dubai</h3>
+                    <p class="tour-action">View city</p>
+                </div>
+            </div>
+    
+            <div class="tour-card" data-aos.init()="fade-up">
+                <img src="https://images.pexels.com/photos/2792601/pexels-photo-2792601.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="tour-img" alt="tour-image">
+                <div class="tour-body">
+                    <h3 class="tour-name">India</h3>
+                    <p class="tour-action">View city</p>
+                </div>
+            </div>
+    
+            <div class="tour-card" data-aos.init()="fade-up">
+                <img src="https://thumbs.dreamstime.com/b/positano-aerial-image-famous-city-located-amalfi-coast-italy-sunrise-184470377.jpg" class="tour-img" alt="tour-image">
+                <div class="tour-body">
+                    <h3 class="tour-name">Italy</h3>
+                    <p class="tour-action">View city</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="book-section" id="booknow">
+        <div class="book-content" data-aos.init()="fade-up">
+            <h1 class="book-now-title">Book your travel today</h1>
+            <p class="book-now-text">Give yourself and your family a peacfull and wonderful vacation this holiday</p>
+    
+            <button class="book-now">book now</button>
+        </div>
+        <div class="bg-circle-2"></div>
+        <img src="https://img.freepik.com/free-photo/flat-lay-camera-passport-arrangement_23-2148786133.jpg" data-aos.init()="fade-up" class="book-now-img" alt="">
+    </section>
+    
+    <!-- footer -->
+    <footer class="footer">
+        <img src="https://thumbs.dreamstime.com/b/famous-world-landmarks-located-around-globe-isolated-white-background-design-travel-tourism-hand-drawn-black-157403555.jpg" class="footer-logo" alt="">
+        <div class="footer-text">
+            <p>Travel the world, on this holiday</p>
+            <p>Email - support@travel.com</p>
+            <p>Phone - 99 88 776655, 99 88 776644</p>
+        </div>
+    </footer>
+    <!-- animate on scoll JS CDN -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/data-aos.init().js"></script>
+    <script src="app.js"></script>
+
+    
+
+    
+
+</body>
+
+</html>
